@@ -1,0 +1,116 @@
+/* FONTS & RESET */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #353535;
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 1.25em;
+  text-align: center;
+  color: azure;
+  padding: 15px 0;
+}
+
+header h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  color: cornsilk;
+}
+
+.sub-header {
+  font-size: 1.25em;
+  text-align: center;
+  color: azure;
+  padding: 15px 0;
+}
+
+#circular-photo {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.cycle {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.cycle h2 {
+  text-align: center;
+}
+
+.cycle p {
+  width: 90%;
+  margin: auto;
+}
+
+.cycle-p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.rides {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+}
+
+figcaption {
+  margin-bottom: 10px;
+  background: #111;
+  color: cornsilk;
+  text-decoration: none;
+}
+
+nav a {
+  display: inline-block;
+  background-color: #353535;
+  color: cornsilk;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 20px;
+}
+
+
+
+
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .header-div {
+    display: flex;
+    padding: 1% 2%;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav a {
+    flex-direction: row;
+    background-color: #353535;
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  
+}
