@@ -85,8 +85,9 @@ nav a {
   padding: 20px;
 }
 
-
-
+.more-videos {
+  display: none;
+}
 
 
 /* Media Queries */
