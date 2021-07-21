@@ -1,8 +1,8 @@
 /* Rides page show-hide additional videos */
 
 function toggleShow() {
-  let thumbNails = document.getElementById("show-hide");
-  let toggleShowButton = document.querySelector(".show-more");
+  let thumbNails = document.getElementById("show-hide-div");
+  let toggleShowButton = document.querySelector("#toggle-show-button");
   let displaySetting = thumbNails.style.display;
 
   if (displaySetting == 'none') {

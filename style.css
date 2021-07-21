@@ -85,8 +85,13 @@ nav a {
   padding: 20px;
 }
 
-.more-videos {
+#show-hide-div {
   display: none;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 95%;
+  margin: auto;
+}
 }
 
 .email {
