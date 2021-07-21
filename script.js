@@ -1,18 +1,24 @@
+/* Rides page show-hide additional videos */
 
-let showMoreButton = document.querySelector(".show-more");
-let showFewerButton = document.querySelector(".show-fewer");
+function toggleShow() {
+  let thumbNails = document.getElementById("show-hide");
+  let toggleShowButton = document.querySelector(".show-more");
+  let displaySetting = thumbNails.style.display;
 
-/* for (let i = 0; i < ) {
-  showMoreButton.addEventListener('click', function () {
-    moreVideos.style.display = "flex";
-  })
-}*/
-
-function showVideos() {
-  let moreVideos = document.getElementsByClassName("more-videos");
-  if (moreVideos.style.display === "none") {
-    moreVideos.style.display = "flex";
+  if (displaySetting == 'none') {
+    thumbNails.style.display = 'flex';
+    toggleShowButton.innerHTML = 'Show Fewer Videos'
   } else {
-    moreVideos.style.display = "none";
+    thumbNails.style.display = 'none';
+    toggleShowButton.innerHTML = 'Show More Videos'
   }
+  /*
+  toggleShowButton.addEventListener('click', function () {
+    thumbNails.style.display = "flex";
+  })*/
 }
+
+
+
+/* Contact page verify email */
+

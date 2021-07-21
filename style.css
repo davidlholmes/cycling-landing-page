@@ -89,6 +89,19 @@ nav a {
   display: none;
 }
 
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  display: block;
+}
+
+#email {
+  display: block;
+}
 
 /* Media Queries */
 @media (min-width: 600px) {
