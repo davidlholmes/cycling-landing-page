@@ -63,6 +63,7 @@ header h2 {
 .rides {
   display: flex;
   flex-wrap: wrap;
+  flex: 2;
   justify-content: space-around;
   width: 95%;
   margin: auto;
@@ -108,6 +109,10 @@ input {
   display: block;
 }
 
+#toggle-show-button {
+  display: block;
+}
+
 /* Media Queries */
 @media (min-width: 600px) {
   .header-div {
@@ -128,8 +133,17 @@ input {
     width: 100%;
     padding: 20px;
   }
+
+  #toggle-show-button {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {
-  
+  #toggle-show-button {
+    display: block;
+  }
+  .rides {
+    flex: 6;
+  }
 }

@@ -12,13 +12,50 @@ function toggleShow() {
     thumbNails.style.display = 'none';
     toggleShowButton.innerHTML = 'Show More Videos'
   }
-  /*
-  toggleShowButton.addEventListener('click', function () {
-    thumbNails.style.display = "flex";
-  })*/
 }
 
 
 
 /* Contact page verify email */
 
+
+const EmailField = document.getElementById("emailInput").value;
+const SubmitButton = document.getElementById("email");
+const writeToPage = document.getElementById("emailDiv");
+
+function ValidateEmail(EmailField) {
+  const atLocation = value.lastIndexOf("@");
+  const dotLocation = value.lastIndexOf(".");
+
+  if (
+    atLocation > 0 &&
+    dotLocation > atLocation + 1 &&
+    dotLocation < value.length - 1
+  ) {
+    writeToPage.innerHTML("<h3>Thank you! Your address has been added.</h3>");
+  } else {
+    writeToPage.innerHTML("Enter a valid email address.");
+  }
+}
+
+SubmitButton.addEventListener('click', ValidateEmail(EmailField));
+SubmitButton.addEventListener("click", function () { alert("Hello World!") });
+/* Copied from https://www.w3resource.com/javascript/form/email-validation.php */
+/*SubmitButton.addEventListener("click", function () {
+  function ValidateEmail(EmailField) {
+    const atLocation = value.lastIndexOf("@");
+    const dotLocation = value.lastIndexOf(".");
+    if (
+      atLocation > 0 &&
+      dotLocation > atLocation + 1 &&
+      dotLocation < value.length - 1
+    ) {
+      writeToPage.innerHTML("<h3>Thank you! Your address has been added.</h3>");
+    } else {
+      alert("Enter a valid email address.");
+    };
+  };
+})
+
+
+/* End copy */
