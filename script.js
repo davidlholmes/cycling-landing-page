@@ -28,30 +28,31 @@ function ValidateEmail(email) {
     emailMsg.innerHTML("<h3>Thank you! Your address has been added.</h3>");
   } else {
     alert("Enter a valid email address.");
-}};
+  }
+};
 
-submitButton.addEventListener('click', ValidateEmail(Email));
-  
+submitButton.addEventListener('click', ValidateEmail(email));
+
 // ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
-  
+
 
 
   // const atLocation = value.lastIndexOf("@");
   // const dotLocation = value.lastIndexOf(".");
-  /*const atLocation = value.lastIndexOf("@");
-  const dotLocation = value.lastIndexOf(".");
-  if (
-    atLocation > 0 &&
-    dotLocation > atLocation + 1 &&
-    dotLocation < value.length - 1
-  ) 
+/*const atLocation = value.lastIndexOf("@");
+const dotLocation = value.lastIndexOf(".");
+if (
+  atLocation > 0 &&
+  dotLocation > atLocation + 1 &&
+  dotLocation < value.length - 1
+)
 
 /*
-  if (
-    atLocation > 0 &&
-    dotLocation > atLocation + 1 &&
-    dotLocation < value.length - 1
-  )*/
+if (
+  atLocation > 0 &&
+  dotLocation > atLocation + 1 &&
+  dotLocation < value.length - 1
+)*/
 
 
 
