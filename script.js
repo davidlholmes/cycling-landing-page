@@ -19,12 +19,12 @@ function toggleShow() {
 /* Contact page verify email */
 
 
-let email = document.querySelector("#emailInput").value;
-let submitButton = document.querySelector("#emailSubmit");
-let emailMsg = document.querySelector("#emailMsg");
+let email = document.getElementById("emailInput").value;
+let submitButton = document.getElementById("emailSubmit");
+let emailMsg = document.getElementById("emailMsg");
 
 function ValidateEmail(email) {
-  if (/\S+@\S+\.\S+/.test(email) === true) {
+  if (^ ([a - zA - Z0 -9_\-\.] +)@([a - zA - Z0 -9_\-\.] +) \.([a - zA - Z]{ 2, 5 }) $.test(email) === true) {
     emailMsg.innerHTML("<h3>Thank you! Your address has been added.</h3>");
   } else {
     alert("Enter a valid email address.");
@@ -35,8 +35,9 @@ submitButton.addEventListener('click', ValidateEmail(email));
 
 // ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 
+// ^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$
 
-
+// /\S+@\S+\.\S+/
   // const atLocation = value.lastIndexOf("@");
   // const dotLocation = value.lastIndexOf(".");
 /*const atLocation = value.lastIndexOf("@");
