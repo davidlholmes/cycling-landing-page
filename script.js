@@ -19,27 +19,45 @@ function toggleShow() {
 /* Contact page verify email */
 
 
-const EmailField = document.getElementById("emailInput").value;
-const SubmitButton = document.getElementById("email");
-const writeToPage = document.getElementById("emailDiv");
+let email = document.querySelector("#emailInput").value;
+let submitButton = document.querySelector("#emailSubmit");
+let emailMsg = document.querySelector("#emailMsg");
 
-function ValidateEmail(EmailField) {
-  const atLocation = value.lastIndexOf("@");
+function ValidateEmail(email) {
+  if (/\S+@\S+\.\S+/.test(email) === true) {
+    emailMsg.innerHTML("<h3>Thank you! Your address has been added.</h3>");
+  } else {
+    alert("Enter a valid email address.");
+}};
+
+submitButton.addEventListener('click', ValidateEmail(Email));
+  
+// ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
+  
+
+
+  // const atLocation = value.lastIndexOf("@");
+  // const dotLocation = value.lastIndexOf(".");
+  /*const atLocation = value.lastIndexOf("@");
   const dotLocation = value.lastIndexOf(".");
-
   if (
     atLocation > 0 &&
     dotLocation > atLocation + 1 &&
     dotLocation < value.length - 1
-  ) {
-    writeToPage.innerHTML("<h3>Thank you! Your address has been added.</h3>");
-  } else {
-    writeToPage.innerHTML("Enter a valid email address.");
-  }
-}
+  ) 
 
-SubmitButton.addEventListener('click', ValidateEmail(EmailField));
-SubmitButton.addEventListener("click", function () { alert("Hello World!") });
+/*
+  if (
+    atLocation > 0 &&
+    dotLocation > atLocation + 1 &&
+    dotLocation < value.length - 1
+  )*/
+
+
+
+
+
+
 /* Copied from https://www.w3resource.com/javascript/form/email-validation.php */
 /*SubmitButton.addEventListener("click", function () {
   function ValidateEmail(EmailField) {
