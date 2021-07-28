@@ -122,10 +122,12 @@ input {
 
   nav {
     display: flex;
+    flex-direction: row;
   }
 
   nav a {
-    flex-direction: row;
+    flex-flow: row wrap;
+    : 2;
     background-color: #353535;
     color: cornsilk;
     text-align: center;
@@ -143,7 +145,20 @@ input {
   #toggle-show-button {
     display: block;
   }
-  .rides {
-    flex: 6;
+  
+  nav {
+    display: flex;
+    flex-direction: row;
   }
+
+  nav a {
+    flex-flow: row wrap;
+    background-color: #353535;
+    color: cornsilk;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px;
+  }
+
 }

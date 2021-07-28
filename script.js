@@ -1,5 +1,5 @@
 /* Rides page show-hide additional videos */
-
+/* This code WORKS so DO NOT touch! */
 let toggleShowButton = document.getElementById("toggle-show-button");
 let thumbNails = document.getElementById("show-hide-div");
 
@@ -17,7 +17,7 @@ function toggleShow() {
 toggleShowButton.addEventListener('click', function(event) {
   toggleShow();
 })
-
+/* End code that works. */
 
 
 /* Contact page verify email */
@@ -26,20 +26,19 @@ toggleShowButton.addEventListener('click', function(event) {
 
 let submitButton = document.getElementById("emailSubmit");
 
-/*
-function ValidateEmail(email) {
-  
-};
-*/
-submitButton.addEventListener('click', function(event) {
+function submitEmail() {
   let email = document.getElementById("emailInput").value;
-  let emailMsg = document.getElementById("emailMsg");
+  let emailMsg = document.getElementById("emailMsg").value;
 
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
-    emailMsg.innerHTML = "Thank you! Your address has been added.";
-} else {
+    emailMsg.innerHTML = "<p>Thank you! Your address has been added.</p>";
+  } else {
     alert("Enter a valid email address.");
-}
+  }
+};
+
+submitButton.addEventListener('click', function(event) {
+  submitEmail();
 });
 
 // /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
