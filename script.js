@@ -19,19 +19,25 @@ function toggleShow() {
 /* Contact page verify email */
 
 
-let email = document.getElementById("emailInput").value;
+
 let submitButton = document.getElementById("emailSubmit");
-let emailMsg = document.getElementById("emailMsg");
 
+/*
 function ValidateEmail(email) {
-  if (^ ([a - zA - Z0 -9_\-\.] +)@([a - zA - Z0 -9_\-\.] +) \.([a - zA - Z]{ 2, 5 }) $.test(email) === true) {
-    emailMsg.innerHTML("<h3>Thank you! Your address has been added.</h3>");
-  } else {
-    alert("Enter a valid email address.");
-  }
+  
 };
+*/
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
+  let email = document.getElementById("emailInput").value;
+  let emailMsg = document.getElementById("emailMsg");
 
-submitButton.addEventListener('click', ValidateEmail(email));
+  if (^ ([a - zA - Z0 -9_\-\.] +)@([a - zA - Z0 -9_\-\.] +) \.([a - zA - Z]{ 2, 5 })$.test(email) === true) {
+  emailMsg.innerHTML = "Thank you! Your address has been added.";
+} else {
+  alert("Enter a valid email address.");
+}
+});
 
 // ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 
