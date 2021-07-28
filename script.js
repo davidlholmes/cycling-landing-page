@@ -1,11 +1,11 @@
 /* Rides page show-hide additional videos */
 
-function toggleShow() {
-  let thumbNails = document.getElementById("show-hide-div");
-  let toggleShowButton = document.querySelector("#toggle-show-button");
-  let displaySetting = thumbNails.style.display;
+let toggleShowButton = document.getElementById("toggle-show-button");
+let thumbNails = document.getElementById("show-hide-div");
 
-  if (displaySetting == 'none') {
+function toggleShow() {
+  
+  if (thumbNails.style.display === 'none') {
     thumbNails.style.display = 'flex';
     toggleShowButton.innerHTML = 'Show Fewer Videos'
   } else {
@@ -13,6 +13,10 @@ function toggleShow() {
     toggleShowButton.innerHTML = 'Show More Videos'
   }
 }
+
+toggleShowButton.addEventListener('click', function(event) {
+  toggleShow();
+})
 
 
 
@@ -27,15 +31,15 @@ function ValidateEmail(email) {
   
 };
 */
-submitButton.addEventListener('click', function (event) {
+submitButton.addEventListener('click', function(event) {
   event.preventDefault();
   let email = document.getElementById("emailInput").value;
   let emailMsg = document.getElementById("emailMsg");
 
-  if (^ ([a - zA - Z0 -9_\-\.] +)@([a - zA - Z0 -9_\-\.] +) \.([a - zA - Z]{ 2, 5 })$.test(email) === true) {
-  emailMsg.innerHTML = "Thank you! Your address has been added.";
+  if (^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$.test(email) === true) {
+    emailMsg.innerHTML = "Thank you! Your address has been added.";
 } else {
-  alert("Enter a valid email address.");
+    alert("Enter a valid email address.");
 }
 });
 
