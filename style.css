@@ -127,7 +127,7 @@ input {
 
   nav a {
     flex-flow: row wrap;
-    : 2;
+    flex-grow: 2;
     background-color: #353535;
     color: cornsilk;
     text-align: center;
