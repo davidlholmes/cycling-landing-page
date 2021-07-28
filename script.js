@@ -26,20 +26,19 @@ toggleShowButton.addEventListener('click', function(event) {
 
 let submitButton = document.getElementById("emailSubmit");
 
-function submitEmail() {
+submitButton.addEventListener('click', function (event) {
+  event.preventDefault();
   let email = document.getElementById("emailInput").value;
-  let emailMsg = document.getElementById("emailMsg").value;
+  let emailMsg = document.getElementById("emailMsg");
 
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
-    emailMsg.innerHTML = "<p>Thank you! Your address has been added.</p>";
+    emailMsg.innerHTML = "Thank you! Your address has been added.";
   } else {
     alert("Enter a valid email address.");
   }
-};
-
-submitButton.addEventListener('click', function(event) {
-  submitEmail();
 });
+
+
 
 // /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
