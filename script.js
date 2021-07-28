@@ -1,5 +1,5 @@
 /* Rides page show-hide additional videos */
-/* This code WORKS so DO NOT touch! */
+/* This code WORKS so DO NOT touch! (Note to Self)*/
 let toggleShowButton = document.getElementById("toggle-show-button");
 let thumbNails = document.getElementById("show-hide-div");
 
