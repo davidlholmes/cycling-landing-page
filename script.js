@@ -32,16 +32,17 @@ function ValidateEmail(email) {
 };
 */
 submitButton.addEventListener('click', function(event) {
-  event.preventDefault();
   let email = document.getElementById("emailInput").value;
   let emailMsg = document.getElementById("emailMsg");
 
-  if (^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$.test(email) === true) {
+  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
     emailMsg.innerHTML = "Thank you! Your address has been added.";
 } else {
     alert("Enter a valid email address.");
 }
 });
+
+// /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
 // ^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$
 
