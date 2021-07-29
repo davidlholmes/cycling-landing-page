@@ -14,9 +14,11 @@ function toggleShow() {
   }
 }
 
-toggleShowButton.addEventListener('click', function(event) {
-  toggleShow();
-})
+if (toggleShowButton) {
+  toggleShowButton.addEventListener('click', function (event) {
+    toggleShow();
+  })
+}
 /* End code that works. */
 
 
