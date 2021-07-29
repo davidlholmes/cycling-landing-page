@@ -34,7 +34,7 @@ submitButton.addEventListener('click', function (event) {
   let emailMsg = document.getElementById("emailMsg");
 
   if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
-    emailMsg.innerHTML = "Thank you! Your address has been added.";
+    emailMsg.innerHTML = `Thank you! ${email} has been added.`;
   } else {
     alert("Enter a valid email address.");
   }
