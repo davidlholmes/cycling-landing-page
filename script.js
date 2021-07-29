@@ -28,17 +28,19 @@ if (toggleShowButton) {
 
 let submitButton = document.getElementById("emailSubmit");
 
-submitButton.addEventListener('click', function (event) {
-  event.preventDefault();
-  let email = document.getElementById("emailInput").value;
-  let emailMsg = document.getElementById("emailMsg");
+if (submitButton) {
+  submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    let email = document.getElementById("emailInput").value;
+    let emailMsg = document.getElementById("emailMsg");
 
-  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
-    emailMsg.innerHTML = `Thank you! ${email} has been added.`;
-  } else {
-    alert("Enter a valid email address.");
-  }
-});
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) === true) {
+      emailMsg.innerHTML = `Thank you! ${email} has been added.`;
+    } else {
+      alert("Enter a valid email address.");
+    }
+  })
+};
 
 
 
