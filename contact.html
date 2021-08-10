@@ -4,37 +4,44 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+
+
   <link rel="stylesheet" href="style.css">
   <title>Never Stop Pedaling</title>
 </head>
 <body>
   <div class="content">
     <header>
-      <h1 class="header">D. Lawrence Holmes</h1>
-      <h2>Contact Me</h2>
+      <h1 class="name">D. Lawrence Holmes</h1>
+      <h2 class="titles">Contact Me</h2>
       <!-- Add circular photo of self or bike here -->
       
     </header>
-    <section class="contact">
-      <ul>
-        <a href="http://facebook.com/davidlholmes"><i class="fas fa-facebook"></i></a>
-        <i class="fas fa-twitter"></i>
-        <i class="fas fa-instagram"></i>
-      </ul>
-    </section>
+    
+    <div id="contactBody">
+      <div id="emailDiv">
+        <p id="emailMsg">Join my mailing list to be alerted about site updates!</p>
 
-    <div id="emailDiv">
-      <p id="emailMsg">Join my mailing list to be alerted about site updates!</p>
+        <form id=emailForm>
+          <input type="email" placeholder="Enter Email"
+          id="emailInput">
+          <button id="emailSubmit" type="submit">Submit</button>
+        </form>
+      </div>
 
-      <form>
-        <input type="email" placeholder="Enter Email"
-        id="emailInput">
-        <button id="emailSubmit" type="submit">Submit Email</button>
-      </form>
+      <section class="socialMedia">
+        <p>Find me on social media!</p>
+        <ul>
+          <a href="http://facebook.com/david.lholme"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+        </ul>
+      </section>
     </div>
     
-      
       <footer>
         <nav>
           <a href="index.html">Home</a>
