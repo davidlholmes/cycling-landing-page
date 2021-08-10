@@ -41,15 +41,21 @@ figcaption {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: none;
+  font-size: 1em;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  font-weight: normal;
 }
-
 #emailForm {
-  margin-top: 20px;
+  margin-top: 50px;
   width: 50%;
 }
 
 #emailInput {
   width: 100%;
+  border: none;
+  margin-bottom: 10px;
 }
 
 #emailSubmit {
@@ -67,7 +73,7 @@ figcaption {
 */
 
 .socialMedia {
-  margin-top: 130px;
+  margin-top: 80px;
 }
 
 .socialMedia p {
