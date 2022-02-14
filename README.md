@@ -1,5 +1,5 @@
 # cycling-landing-page
-Code Louisville Front-End Wed 2021
+Code Louisville Front-End Web 2021
 
 "47 years of age. I've been riding bicycles since I was a child.
 I fell out of it for several years then got back into it. I discovered I love it more than I ever imagined!
